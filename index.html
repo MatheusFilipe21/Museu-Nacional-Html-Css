@@ -1,43 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='utf-8'>
-        <title>Museu Nacional</title>
 
-        <link rel='stylesheet' type='text/css' href='css/estilo.css'>
+<head>
+    <meta charset='utf-8'>
+    <title>Museu Nacional</title>
 
-        <link rel='stylesheet' type='text/css' href='css/normalize.css'>
+    <link rel='stylesheet' type='text/css' href='css/estilo.css'>
 
-        <!--[if lt IE 9]>
+    <link rel='stylesheet' type='text/css' href='css/normalize.css'>
+
+    <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
         <![endif]-->
 
 
-    </head>
-    <body>
-       
-        <div id="container">
+</head>
 
-            <header>
-                <div id="logo">
-                    <h1><a href="index.html">Museu Nacional</a></h1>
-                </div>
+<body>
 
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="">Exposições</a></li>
-                        <li><a href="">Pesquisa</a></li>
-                        <li><a href="">Arcevo</a></li>
-                        <li><a href="">Vídeos</a></li>
-                        <li><a href="">Fotos</a></li>
-                        <li><a href="">Contato</a></li>
-                    </ul>
-                </nav>
-                
-            </header>
+    <div id="container">
+
+        <header>
+            <div id="logo">
+                <h1><a href="index.html">Museu Nacional</a></h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Exposições</a></li>
+                    <li><a href="">Pesquisa</a></li>
+                    <li><a href="">Arcevo</a></li>
+                    <li><a href="">Vídeos</a></li>
+                    <li><a href="">Fotos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div id="principal">
+            <div id="conteudo">
+                <section id="capa">
+                    <img src="imagens/museu.png">
+                </section>
+            </div>
+
+            <aside>
+                <section id="depoimento">
+                    <img src="imagens/depoimento.png">
+                </section>
+
+                <section id="visita">
+                    <h4>Faça uma visita</h4>
+                    <form>
+                        <fieldset>
+                            <label for="data">Data</label>
+                            <input class="campo data" type="date" id="data"><br>
+
+                            <label for="quantidade">Quantidade de pessoas</label>
+                            <input class="campo" type="number" id="quantidade" value="1" min="1" max="10">
+                        </fieldset>
+
+                        <input class="botao" type="submit" value="Verificar disponibilidade">
+                    </form>
+                </section>
+
+                <section id="galeria">
+                    <h4>Galeria de fotos</h4>
+
+                    <a href="">
+                        <img src="imagens/imagem1.jpg" alt="Descrição da imagem">
+                    </a>
+
+                    <a href="">
+                        <img src="imagens/imagem2.jpg" alt="Descrição da imagem">
+                    </a>
+
+                    <a href="">
+                        <img src="imagens/imagem3.jpg" alt="Descrição da imagem">
+                    </a>
+
+                    <a href="">
+                        <img src="imagens/imagem4.jpg" alt="Descrição da imagem">
+                    </a>
+
+                    <a href="">
+                        <img src="imagens/imagem5.jpg" alt="Descrição da imagem">
+                    </a>
+
+                    <a href="">
+                        <img src="imagens/imagem6.jpg" alt="Descrição da imagem">
+                    </a>
+
+
+                </section>
+            </aside>
 
         </div>
 
-    </body>
+    </div>
+
+</body>
+
 </html>
